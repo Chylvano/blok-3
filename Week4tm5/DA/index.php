@@ -1,38 +1,47 @@
 <?php
+require ("assets/includes/functions.php");
 
-require('connection.php');
+$result = getAll();
 
-$stmt = $conn->prepare('select * from characters order by name');
-$stmt->execute();
-$result = $stmt->fetchAll();
-$rows = '';
-$char = '';
-
+$rows = countall()
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DA</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>All Characters</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="assets/css/style1.css" rel="stylesheet"/>
 </head>
 <body>
- <div class='grid-container'>
-<?php include("assets/includes/header.php") ?> 
-    <?php foreach($result as $rows){
-        echo "<img src='assets/images/$rows[2]'><br>
-        $rows[1] <br>
-        $rows[3] <br>
-        <button><a href='index.php?id=$rows[0]'>bekijken</a></button><br>
-        <hr>";
-    
-    }
-    ?>
-</div>
+<header><h1>Alle <?=$rows?> characters uit de database</h1>
 
-    <?php include('assets/includes/footer.php') ?>
+</header>
+<div id="container">
+<?php
+        foreach ($result as $row) {
+        ?>
+        <a class="item" href="card.php?id=<?=$row['id']?>">
+            <div class="left">
+                <img class="avatar" src="assets/images/<?=$row['avatar']?>">
+            </div>
+            <div class="right">
+                <h2><?=$row['name']?></h2>
+                <div class="stats">
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fas fa-heart"></i></span><?=$row['health']?></li>
+                        <li><span class="fa-li"><i class="fas fa-fist-raised"></i></span><?=$row['attack']?></li>
+                        <li><span class="fa-li"><i class="fas fa-shield-alt"></i></span><?=$row['defense']?></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="button"><i class="fas fa-search"></i> bekijk</div>
+            </a>
+        <?php
+        }
+        ?>
+</div>
+<footer>&copy; Chylvano Landburg 2020</footer>
 </body>
 </html>
