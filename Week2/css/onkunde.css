@@ -21,29 +21,6 @@ a{
    overflow-x: hidden;
   }
 
-  .toptext{
-    font-family: 'Peralta', cursive;
-    color: white;
-    font-size: 75px;
-    margin-top: 25px;
-    grid-column-start: 1;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-
-  .name{
-    grid-column-start: 1;
-    grid-column-end: 11;
-    grid-row-start: 5;
-    grid-row-end: 6;
-  }
-  .email{
-    grid-column-start: 1;
-    grid-column-end: 11;
-    grid-row-start: 4;
-    grid-row-end: 5;
-  }
 
   .empty{
     background-color: rgb(61, 61, 61);
@@ -61,120 +38,6 @@ a{
     grid-row-end: 4;
   }
 
-  .titel{
-    margin-left: 15px;
-    margin-top: 20px;
-    font-size: 18px;
-    color: white;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-
-  .text1{
-    margin-left: 15px;
-    margin-top: 20px;
-    font-size: 18px;
-    color: white;
-    grid-column-start: 3;
-    grid-column-end: 7;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-
-  .text2{
-    margin-left: 25px;
-    margin-top: 25px;
-    font-size: 30px;
-    color: black;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
-  }
-
-  .text3{
-    margin-left: 25px;
-    margin-top: 10px;
-    font-size: 20px;
-    color: black;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 5;
-    grid-row-end: 6;
-  }
-
-  .text4{
-    margin-left: 25px;
-    font-size: 20px;
-    color: black;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 6;
-    grid-row-end: 7;
-  }
-
-  .text5{
-    margin-left: 25px;
-    font-size: 20px;
-    color: black;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 7;
-    grid-row-end: 8;
-  }
-
-  .text6{
-    margin-left: 25px;
-    font-size: 20px;
-    color: black;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 8;
-    grid-row-end: 9;
-  }
-
-  .text7{
-    margin-left: 25px;
-    font-size: 20px;
-    color: black;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 9;
-    grid-row-end: 10;
-  }
-
-  .text8{
-    margin-left: 25px;
-    font-size: 20px;
-    color: black;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 10;
-    grid-row-end: 11;
-  }
-
-
-  .text9{
-    margin-left: 25px;
-    font-size: 20px;
-    color: black;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 11;
-    grid-row-end: 12;
-  }
-
-  .text10{
-    margin-left: 25px;
-    font-size: 20px;
-    color: black;
-    grid-column-start: 1;
-    grid-column-end: 7;
-    grid-row-start: 12;
-    grid-row-end: 13;
-  }
 
   .grijs{
     font-size: 20px;
@@ -196,135 +59,12 @@ a{
     grid-row-end: 14;
   }
 
-  #input1{
-    font-size: 20px;
-    position: relative;
-    left: 500px;
-    bottom: 25px;
-  }
-
-  #input2{
-    font-size: 20px;
-    position: relative;
-    left: 500px;
-    bottom: 25px;
-  }
-
-
-  #input3{
-    font-size: 20px;
-    position: relative;
-    left: 500px;
-    bottom: 25px;
-  }
-
-
-  #input4{
-    font-size: 20px;
-    position: relative;
-    left: 500px;
-    bottom: 25px;
-  }
-
-
-  #input5{
-    font-size: 20px;
-    position: relative;
-    left: 500px;
-    bottom: 25px;
-  }
-
-
-  #input6{
-    font-size: 20px;
-    position: relative;
-    left: 500px;
-    bottom: 25px;
-  }
-
-
-  #input7{
-    font-size: 20px;
-    position: relative;
-    left: 500px;
-    bottom: 25px;
-  }
-
-
-  #submit{
-    font-size: 20px;
-    position: relative;
-    left: 270px;
-    top: 575px;
-  }
-
   .grijs2{
     background-color: rgb(61, 61, 61);
     grid-column-start: 1;
     grid-column-end: 11;
     grid-row-start: 14;
     grid-row-end: 15;
-  }
-
-  #input11{
-    font-size: 20px;
-    position: relative;
-    left: 425px;
-    bottom: 25px;
-  }
-
-  #input21{
-    font-size: 20px;
-    position: relative;
-    left: 500px;
-    bottom: 25px;
-  }
-
-
-  #input31{
-    font-size: 20px;
-    position: relative;
-    left: 500px;
-    bottom: 25px;
-  }
-
-
-  #input41{
-    font-size: 20px;
-    position: relative;
-    left: 500px;
-    bottom: 25px;
-  }
-
-
-  #input51{
-    font-size: 20px;
-    position: relative;
-    left: 435px;
-    bottom: 25px;
-  }
-
-
-  #input61{
-    font-size: 20px;
-    position: relative;
-    left: 500px;
-    bottom: 25px;
-  }
-
-
-  #input71{
-    font-size: 20px;
-    position: relative;
-    left: 500px;
-    bottom: 25px;
-  }
-
-  #input81{
-    font-size: 20px;
-    position: relative;
-    left: 500px;
-    bottom: 25px;
   }
 
   .footer2{
@@ -345,11 +85,4 @@ a{
     grid-column-end: 11;
     grid-row-start: 14;
     grid-row-end: 15;
-  }
-
-  #submit2{
-    font-size: 20px;
-    position: relative;
-    left: 270px;
-    top: 640px;
   }

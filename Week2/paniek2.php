@@ -1,3 +1,8 @@
+<?php
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en" class="bg-secondary">
 <head>
@@ -14,7 +19,7 @@
 </head>
 <body class="w-75 mx-auto">    
       <div class="container">
-               <h2 class="my-3">
+      <h2 class="my-3">
                    MAD LIPS
                 </h2>
                <div class="text-decoration-none bg-danger p-1"><a href="paniek.php">
@@ -26,36 +31,19 @@
                <h5 class="mt-3"><b>
                    Er heerst paniek
                 </b></h5>
-                <form action="paniek2.php" method="post">
-               <div class="mb-1">
-                   Welk dier zou je nooit als huisdier willen hebben?<input type="name" id="input11" name="input11" required>
-                   </div>
-               <div class="mb-1">
-                   Wie is de belangrijkste persoon in je leven?<input type="name" id="input11" name="input21" required>
-               </div>
-               <div class="mb-1">
-                   In welk land zou je graag willen wonen?<input type="name" id="input31" name="input31" required>
-                </div>
-               <div class="mb-1">
-                   Wat doe je als je je verveelt?<input type="name" id="input41" name="input41" required>
-                </div>
-               <div class="mb-1">
-                   Met welk speelgoed speelde je als kind het meest?<input type="name" id="input51" name="input51" required>
-                </div>
-               <div class="mb-1">
-                   Bij welke docent spijbel je het liefst?<input type="name" id="input61" name="input61" required>
-                </div>
-               <div class="mb-1">
-                   Als je €100.000,- had, wat zou je dan kopen?<input type="name" id="input71" name="input71" required>
-                </div>
-               <div class="mb-4">
-                   Wat is je favoriete bezigheid?<input type="name" id="input81" name="input81" required>
-                </div>
-                <input type="submit" id="submit2">
-                <div class="text-center text-light bg-dark py-3 mt-5">
+                Er heerst paniek in het koninkrijk van <?= $_POST['input31'];?>, Koning <?= $_POST['input61'];?> is ten einde raad en als koning<br>
+            <?= $_POST['input61'];?> ten einde raad is, dan roept hij zijn ten-einde-raadsheer <?= $_POST['input21'];?>.<br><br>
+            "<?= $_POST['input21'];?>! Het is een ramp! Het is een schande!"<br><br>
+            "Sire, Majesteit, Uwe Luidruchtigheid, wat is er aan de hand?"<br><br>
+            "Mijn <?= $_POST['input11'];?> is verdwenen! Zo maar, zonder waarschuwing. En ik had net <?= $_POST['input51'];?> voor hem gekocht!"<br><br>
+            "Majesteit, uw <?= $_POST['input11'];?> komt vast vanzelf weer terug?"<br><br>
+            "Ja, da's leuk en aardig, maar hoe moet ik in de tussentijd <?= $_POST['input81'];?> leren?"<br><br>
+            "Maar Sire, daar kunt u toch uw <?= $_POST['input71'];?> voor gebruiken."<br><br>
+            "<?= $_POST['input21'];?>, je hebt helemaal gelijk! Wat zou ik doen als ik jou niet had."<br><br>
+            "Mij vervelen, Sire."
+     <div class="text-center text-light bg-dark py-3 mt-5">
                    Chylvano Landburg © 2020
                 </div>
-            </form>
         </div>
     </div>
 </body>
